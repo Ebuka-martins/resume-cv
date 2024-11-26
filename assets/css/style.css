@@ -25,6 +25,14 @@
     background-color:#9b59b6;
 }
 
+.ui-menu-color-interests {
+    background-color: #2e8b57;
+}
+
+.ui-menu-color-github {
+    background-color: #27436d;
+} 
+
 .ui-menu-color-Contact {
     background-color:#3498db;
 }
@@ -33,6 +41,17 @@
     background-color:#525252;
 }
 
+.ui-menu-color-download {
+    background-color: #e3c21a;
+}
+
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+
+.ui-menu-color-resume {
+    background-color:#9b59b6;
+}
 /* ------------------------------Special paddings/margin/text */
 
 h1,h2,h3,h4 {
@@ -264,6 +283,9 @@ footer {
     width: 60%;
 }
 
+#map {
+    min-height: 360px;
+  }
 
 /* ------------------------------Skills */
 
