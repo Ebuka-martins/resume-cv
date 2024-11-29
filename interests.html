@@ -195,38 +195,9 @@
         </div>
       </div>
     </footer>
-    <script>
-      require('dotenv').config();
-
-      function initMap() {
-    const centerLocation = { lat: 53.441769, lng: -8.453751 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
-        center: centerLocation,   
-    });
-
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const locations = [
-        { lat: 53.426449, lng: -6.24991 },
-        { lat: 51.925388, lng: -8.46995 },
-        { lat: 51.83589, lng: -8.26343 },
-    ];
-
-    const markers = locations.map((location, i) => {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
-        });
-    });
-
-    new MarkerClusterer(map, markers, {
-        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"});
-}
-
-        
-  </script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo_LXVn3Cawg5snDFZJOnCouc0aw4bJfQ&callback=initMap"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/maps.js"></script>
   </body>
 </html>
